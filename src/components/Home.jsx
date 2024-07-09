@@ -32,7 +32,6 @@ const Home = () => {
   
   return (
     <>
-      <h1>hello</h1>
       <div className='container'>
         <div className='search'>
           <input type='text' placeholder='Enter Dishe' onChange={handleInput}></input>
