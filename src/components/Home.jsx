@@ -22,7 +22,7 @@ const Home = () => {
 
   useEffect(()=>{
     myfun();
-  },[])
+  },[]);
 
   const handleInput = (event)=>{
     setSearch(event.target.value)
