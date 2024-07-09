@@ -1,0 +1,1 @@
+https://api.edamam.com/search?q=${search}&app_id=3ffd68da&app_key=09fa4226800fbd8fc5281d2f7cdaa34e
