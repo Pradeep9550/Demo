@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom'
 
 
 
+
 const Home = () => {
   const [search,setSearch] = useState("pizza");
   const [data,setData] = useState([]);
@@ -22,7 +23,7 @@ const Home = () => {
 
   useEffect(()=>{
     myfun();
-  },[]);
+  },);
 
   const handleInput = (event)=>{
     setSearch(event.target.value)
@@ -44,6 +45,9 @@ const Home = () => {
             <img src={obj.recipe.image} alt=''></img>
             <h3>{obj.recipe.label}</h3>
             
+
+            <Link state={obj} to="/single" className="linlbtn">View Recipe</Link>
+
            
             
            <Link to={obj.recipe.url} >
